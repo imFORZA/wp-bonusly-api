@@ -5,9 +5,19 @@
  * @package WP-Bonusly-API
  */
 
+/*
+* Plugin Name: WP Bonusly API
+* Plugin URI: https://github.com/wp-api-libraries/wp-bonusly-api
+* Description: Perform API requests to Bonusly in WordPress.
+* Author: imFORZA
+* Version: 1.0.0
+* Author URI: https://www.imforza.com
+* GitHub Plugin URI: https://github.com/wp-api-libraries/wp-bonusly-api
+* GitHub Branch: master
+*/
+
 /* Exit if accessed directly. */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-
 
 /* Check if class exists. */
 if ( ! class_exists( 'BonuslyAPI' ) ) {
