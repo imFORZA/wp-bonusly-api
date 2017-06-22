@@ -76,6 +76,80 @@ if ( ! class_exists( 'BonuslyAPI' ) ) {
 
 		}
 
+		/* ANALYTICS. */
+
+
+		/**
+		 * get_analytics_standouts function.
+		 *
+		 * @access public
+		 * @param string $role (default: '') Role
+		 * @param string $value (default: '') Value
+		 * @param string $limit (default: '') Limit
+		 * @param string $period (default: '') Period
+		 * @return void
+		 */
+		public function get_analytics_standouts( $role = '', $value = '', $limit = '', $period = '' ) {
+
+			$request = $this->base_uri . 'analytics/standouts' . static::$api_key;
+
+			return $this->fetch( $request );
+
+		}
+
+
+		/**
+		 * get_analytics_trends function.
+		 *
+		 * @access public
+		 * @return void
+		 */
+		public function get_analytics_trends() {
+
+			$request = $this->base_uri . 'analytics/trends' . static::$api_key;
+
+			return $this->fetch( $request );
+
+		}
+
+		/* API KEYS. */
+
+
+		/**
+		 * get_apikeys function.
+		 *
+		 * @access public
+		 * @param string $user_id (default: '')
+		 * @return void
+		 */
+		public function get_apikeys( $user_id = '' ) {
+
+		}
+
+		/**
+		 * add_apikey function.
+		 *
+		 * @access public
+		 * @param mixed $label
+		 * @param string $read_only (default: '')
+		 * @param string $user_id (default: '')
+		 * @return void
+		 */
+		public function add_apikey( $label, $read_only = '', $user_id = '' ) {
+
+		}
+
+		/**
+		 * delete_apikey function.
+		 *
+		 * @access public
+		 * @param mixed $apikey_id
+		 * @return void
+		 */
+		public function delete_apikey( $apikey_id ) {
+
+		}
+
 		/**
 		 * Get Bonuses.
 		 *
@@ -116,6 +190,17 @@ if ( ! class_exists( 'BonuslyAPI' ) ) {
 
 			return $this->fetch( $request );
 
+		}
+
+		/**
+		 * get_bonuses_rss_feed function.
+		 *
+		 * @access public
+		 * @return void
+		 */
+		function get_bonuses_rss_feed() {
+
+			return 'https://bonus.ly/api/v1/bonuses.atom?access_token=' . . static::$api_key;
 		}
 
 	}
