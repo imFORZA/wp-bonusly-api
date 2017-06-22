@@ -200,7 +200,7 @@ if ( ! class_exists( 'BonuslyAPI' ) ) {
 		 */
 		function get_bonuses_rss_feed() {
 
-			return 'https://bonus.ly/api/v1/bonuses.atom?access_token=' . . static::$api_key;
+			return 'https://bonus.ly/api/v1/bonuses.atom?access_token=' . static::$api_key;
 		}
 
 	}
