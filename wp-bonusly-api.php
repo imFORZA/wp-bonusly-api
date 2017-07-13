@@ -67,7 +67,7 @@ if ( ! class_exists( 'BonuslyAPI' ) ) {
 			$code = wp_remote_retrieve_response_code( $response );
 
 			if ( 200 !== $code ) {
-				return new WP_Error( 'response-error', sprintf( __( 'Server response code: %d', 'text-domain' ), $code ) );
+				return new WP_Error( 'response-error', sprintf( __( 'Server response code: %d', 'wp-bonusly-api' ), $code ) );
 			}
 
 			$body = wp_remote_retrieve_body( $response );
