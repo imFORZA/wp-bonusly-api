@@ -25,7 +25,7 @@ if ( ! class_exists( 'BonuslyAPI' ) ) {
 	/**
 	 * BonuslyAPI API Class.
 	 */
-	class DBonuslyAPI {
+	class BonuslyAPI {
 
 		/**
 		 * Bonusly API Key
