@@ -1,9 +1,11 @@
 <?php
 /**
- * WP-Bonusly-API (https://bonus.ly/api)
+ * WP-Bonusly-API
  * https://bonusly.gelato.io/docs/
  *
- * @package WP-Bonusly-API
+ * @link https://bonus.ly/api API Docs
+ * @link https://bonusly.gelato.io/docs/ API Docs on Gelato.io
+ * @package WP-API-Libraries\WP-Bonusly-API
  */
 
 /*
@@ -25,6 +27,9 @@ if ( ! class_exists( 'BonuslyAPI' ) ) {
 
 	/**
 	 * BonuslyAPI API Class.
+	 *
+	 * @link https://bonus.ly/api API Docs
+	 * @link https://bonusly.gelato.io/docs/ API Docs on Gelato.io
 	 */
 	class BonuslyAPI {
 
